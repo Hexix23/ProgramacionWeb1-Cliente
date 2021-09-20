@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST"> <!--Formulario HTML5--> <!--Tambien podemos poner el at. action-->
+        <fieldset> <!--Recuadro grande para encuadrar en la web-->
+            <legend>Datos Personales</legend> <!--Texto de arriba del fieldset-->
+            <p>
+                <label for="nombre">Nombre:</label> <!--at. for hace referencia al input que esta enganchado-->
+                <input type="text" name="nombre" placeholder="Inserta nombre completo"/> 
+                                                <!--'name' es un at. que hace referencia a el nombre que le vamo a poner a la variable internamente-->
+                                                <!--'placeholder' texto que pones en la cajita para poder escribir por encima-->
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" value="18"> <!--'value' valor por defecto que aparece en la web, se puede borrar y poner el que quieras-->
+            </p>
+            <p>
+                <label for="tlf">Telefono:</label>
+                <input type="tel" name="tlf" required> <!--'type=tlf' atributo tipo telefono-->
+                                                       <!--'required' campo obligatorio-->
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" required autofocus> <!--'autofocus' se seleccionada nada mas meterse en la web-->
+            </p>
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento">
+            </p>
+            <p>
+                <label for="tipo_votante">Tipo de votante:</label>
+                <select name="tipo_votante"> <!--crea un lista para elegir opciones-->
+                    <option value="1" selected>Alumno</option> <!--cada una de las opciones-->
+                    <option value="2">Profesor</option>
+                    <option value="3">Otros</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Propuestas a votar:</legend>
+            <p>
+                <label for="propuestas">Elige las propuestas que quieras:</label><br>
+                <input type="checkbox" name="propuestas" value="1"/>Propuesta 1<br> <!--'autofocus' se puede elegir varias opciones-->
+                <input type="checkbox" name="propuestas" value="2"/>Propuesta 2<br>
+                <input type="checkbox" name="propuestas" value="3"/>Propuesta 3<br>
+                <input type="checkbox" name="propuestas" value="4"/>Propuesta 4
+            </p>
+            <p>
+                <label for="propuestas">Elige solo una:</label><br>
+                <input type="radio" name="propuestas" value="1"/>Propuesta 1<br> <!--'radio' solo se puede elegir una a la vez-->
+                <input type="radio" name="propuestas" value="2"/>Propuesta 2<br>
+                <input type="radio" name="propuestas" value="3"/>Propuesta 3<br>
+                <input type="radio" name="propuestas" value="4"/>Propuesta 4
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Otras propuestas:</legend>
+            <p>
+                <label for="hola_salida">Elige la hora de salir de clase:</label>
+                <input type="time" name="hora_salida"/> <!--'time' poder seleccionar horas-->
+                <label for="color_aula">Color aula:</label>
+                <input type="color" name="color_aula"/> <!--'color' poder elegir colores-->
+                <label for="indices">Indice de satisfaccion con la universidad:</label>
+                <input type="range" name="indices" min="0" max="5"/> <!--'range' poder elegir rangos-->
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar"/>
+    </form>
+    
+</body>
+</html>
