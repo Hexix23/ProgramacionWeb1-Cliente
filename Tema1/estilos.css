@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box; /*ajusta el box-sizing*/
+}
+table {
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td,th {
+    width: 200px;
+    /*padding: 20px;*/
+    border: 1px solid gray;
+    text-align: center;
+}
+/*accedemos a la clase asignatura y a sus diferentes clases dentro de ellas*/
+.asignatura{
+    background-color: bisque;
+    padding: 0px;
+
+}
+.asignatura .texto{
+    background-color: darkgray;
+}
+.asignatura .hora_inic{
+    text-align: left;
+}
+.asignatura .hora_fin{
+    text-align: right;
+}
