@@ -5,7 +5,7 @@
 h1,
 h4,
 p {
-  margin: 0px;
+  margin: 0px; /*RESETEO->quitar los margenes por defecto de HTML*/
 }
 
 body {
@@ -19,7 +19,23 @@ body {
   width: 90%;
 }
 
+.content_wrapper{
+  display: flex; /*Permite que la pagina se adapte al tamaño del dispositivo*/
+  flex-wrap: wrap; /*Te coloca las cajas una detras de la otra*/
+  justify-content: space-between;/*Que te coja todo el ancho de la pagina*/
+}
 
+.social{
+  display: flex; /*Permite que la pagina se adapte al tamaño del dispositivo*/
+  flex-wrap: wrap;
+  justify-content: space-between;/*Que te coja todo el ancho de la pagina*/
+}
+
+.articles{
+  display: flex; /*Permite que la pagina se adapte al tamaño del dispositivo*/
+  flex-wrap: wrap;
+  justify-content: space-between;/*Que te coja todo el ancho de la pagina*/
+}
 
 header {
   border-bottom: 1px solid #666666;
@@ -42,10 +58,12 @@ nav div {
 /* El elemento principal */
 main {
   border: 1px solid #aaaaaa;
+  border-radius: 1em; /*bordes redonditos*/
   height: 400px;
   padding: 1em;
   text-align: center;
   width: 54%;
+  margin-bottom: 1em;
 }
 
 main img {
@@ -57,6 +75,7 @@ main img {
 /* Artículo. Imágenes pequeñas */
 article {
   border: 1px solid #aaaaaa;
+  border-radius: 1em; /*bordes redonditos*/
   height: 300px;
   padding: 1em;
   text-align: center;
