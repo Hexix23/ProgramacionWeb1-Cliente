@@ -14,6 +14,11 @@ body {
 /* Este es el contenedor General donde fijo la estructura de la rejilla o Grid */
 .container {
   color: #666666;
+  display: grid; /*container y darle un display de tipo GRIP*/
+  grid-gap: 1em;
+  grid-auto-flow: row;  
+  grid-template-columns: 10% 30% 30% 30%; /*define el numero de columnas del grip*/
+  grid-template-rows: 100px 400px 300px 100px; /*define el numero de rows del grip*/
   font-family: 'Lora', serif;
   margin: 20px auto;
   width: 90%;
@@ -22,12 +27,16 @@ body {
 /* Cabecera de la página */
 header {
   border-bottom: 1px solid #666666;
+  grid-column: 1 / 5; /*tamaño que va a ocupar de columnas en el GRID, en este caso irian de la columna 1 hasta la 4*/
+  grid-row: 1 / 2; /*tamaño que va a ocupar de filas en el GRID, en este caso irian de la columna 1 hasta la 1*/
   padding: 1em;
   text-align: center;
 }
 
 /* Menú lateral */
 nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
   padding: 1em;
 }
 
@@ -38,7 +47,11 @@ nav div {
 /* Imagen grande */
 main {
   border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
   padding: 1em;
+  justify-self: center;
   text-align: center;
   width: 90%;
 }
@@ -51,6 +64,7 @@ main img {
 
 article {
   border: 1px solid #aaaaaa;
+  border-radius: 1em;
   padding: 1em;
   text-align: center;
 }
@@ -71,7 +85,11 @@ article:nth-of-type(4) {
 footer {
   align-items: center;
   border-top: 1px solid #666666;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
   padding: 2em;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer img {
