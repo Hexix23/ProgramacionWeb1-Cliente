@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Basicos</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //0.Mensajes
+        //Alet
+        //alert('Hello clase de ciber');
+
+        //Console
+        console.log('mensaje de registro en la consola');
+        console.info('mensaje informativo');
+        console.error('mensaje de error');
+        console.warn('mensaje de aviso');
+
+        //Debugger: activacion
+        //debugger---Codigo
+        //console.log('Despues del debugger');---Codigo
+
+        //1.Variables
+        const saludo = "Hola otra vez"; 
+        console.log(saludo);
+        //saludo = "hola holita"; //no se puede asignar un nuevo valor a una constante
+
+        if(true){
+            const text = "texto dentro de if";
+            console.log(text);
+        }
+        //console.log(text); --> esta variable esta fuera del SCOPE porque esta declarada dentro del if y no se printea
+        
+        //Diferencia entre let/var
+        let variableMejor = "variable con scope";
+        var variablePeor = "variable sin scope";
+
+        //-----------------\\-->con SCOPE
+        if(true){
+            let text = "variable definida dentro del if con LET";
+            console.log(text);
+        }
+        console.log(text); //esta no se ve porque queda fuera del SCOPE
+        //-----------------\\ -->sin SCOPE
+        if(true){
+            var text = "variable definida dentro del if con VAR";
+            console.log(text);
+        }
+        console.log(text); //esta variable se ve porque no tiene SCOPE, mala practica ya que perdemos control en el codigo
+
+        //OPERACIONES
+
+        // suma
+        console.log(1 + 1);
+        // resta
+        console.log(1 - 1);
+        // multiplicacion
+        console.log(3 * 2);
+        // division
+        console.log(20 / 10);
+        // menor y mayor que
+        console.log(10 < 20); //TRUE
+        console.log(40 > 20); //TRUE
+        // <= o >= que 
+        console.log(10 <= 20 ); //TRUE
+        console.log(50 >= 40 ); //TRUE
+        // == iqueal que (Check value)
+        console.log(40 == 40); //TRUE
+        console.log(40 == '40'); //TRUE
+        // === iqueal que (Check value and type)
+        console.log(40 === 40); //TRUE
+        console.log(40 === '40'); //FALSE
+        // != No es igual que, PARA CHEKEAR TIPO TAMBIEN !==
+        console.log(40 != '40'); //FALSE
+        console.log(40 !== '40'); //TRUE
+        //TYPEOF
+        let num = 20;
+        console.log(typeof(num));
+        //NaN-->Te dice si es un numero o no
+        const notanum = 'abfhahbfebf';
+        console.log(isNaN(notanum));
+        console.log(isNaN('123'));
+        console.log(isNaN(123));
+    </script>
+</body>
+</html>
