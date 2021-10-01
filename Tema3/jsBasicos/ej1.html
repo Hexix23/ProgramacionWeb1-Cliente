@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript"> 
+        let movil = 300;
+        let cascos = 30;
+        let funda = 10;
+        let descuento = 10;
+        let iva = 1 + 21/100;
+
+        let sumaT = movil + cascos + funda;
+        let totalDisc = sumaT * (1 - descuento/100);
+        let precioFinal = totalDisc * iva;
+
+        console.log('Precio final '+ precioFinal.toFixed(2));
+
+        //cursos multiple: alt + shift + click 
+    
+    </script>
+</body>
+</html>
