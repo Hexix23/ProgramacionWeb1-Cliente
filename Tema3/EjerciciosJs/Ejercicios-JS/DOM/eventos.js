@@ -51,3 +51,15 @@ for (var i = 0; i < tasks.length; i += 1) {
     var task = tasks[i];
     createTaskElement(todoListElement, task.title);
 }
+
+var inputElement = document.getElementById('titulo')
+inputElement.addEventListener('input', function(event){
+    let varEntrada = event.target.value;
+    let regex = /^[A-Z]/;
+
+    if(regex.test(varEntrada) || varEntrada === ''){
+        this.style.backgroundColor = 'ligthgreen';
+    }else{
+        this.style.backgroundColor = 'tomato';
+    }
+});

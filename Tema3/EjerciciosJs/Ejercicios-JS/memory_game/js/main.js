@@ -35,3 +35,13 @@ function clickedCell(elemento){
         }
     }
 }
+
+function refreshPafe(){
+    parejaActual = [];
+    emparejadas = [];
+
+    $("img").attr("src", './img/sky.png');
+    /*document.querySelector('img').forEach(function(e){
+        e.src = './img/sky.png';
+    });*/
+}
