@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de encontrar la llave</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>
+  <body>
+    <div class="header">
+      <head id="titulo">
+        <font color="white">Juego de encontrar la llave</font>
+      </head>
+    </div>
+    <div class="container">
+      <div class="mano_cerrada">
+        <img
+          src="mano_cerrada.jpg"
+          id="M0"
+          width="150"
+          height="170"
+          onclick='cambiaMano(document.getElementById("M0"))'
+        />
+      </div>
+      <div class="mano_cerrada">
+        <img
+          src="mano_cerrada.jpg"
+          id="M1"
+          width="150"
+          height="170"
+          onclick='cambiaMano(document.getElementById("M1"))'
+        />
+      </div>
+    </div>
+    <!--<div class="container"> 
+        <div class="mano_abierta"><img src="manoCerrada.jpg" id="M2" width="150" height="170" onclick='cambiaMano(this)'></div>
+        <div class="mano_abierta"><img src="manoCerrada.jpg" id="M3" width="150" height="170" onclick='cambiaMano(this)'></div>
+    </div>-->
+    <div class="container">
+      <div class="botones"><button>Reset contadores</button></div>
+      <div class="botones"><button>Pista</button></div>
+    </div>
+    <table>
+      <thead>
+        Contadores
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jugador:</td>
+          <td id="contador_jugador">0</td>
+        </tr>
+        <tr>
+          <td>NPC:</td>
+          <td id="contador_npc">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="funciones.js"></script>
+  </body>
+</html>

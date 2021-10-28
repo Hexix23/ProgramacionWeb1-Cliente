@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link re="stylesheet" type="text/css" href="estilo.css" />
+    <title>EjercicioCartas</title>
+  </head>
+  <body>
+    <main>
+      <div class="botones">
+        <img src="img/trasera.jpg" id="pc_jugador" />
+        <button id="bt_jugador" onClick="recibirCarta(this.id)">
+          Carta jugador
+        </button>
+      </div>
+      <div class="botones">
+        <img src="img/trasera.jpg" id="pc_npc" />
+        <button id="bt_npc" onClick="recibirCarta(this.id)">Carta npc</button>
+      </div>
+    </main>
+    <script src="funciones.js"></script>
+  </body>
+</html>

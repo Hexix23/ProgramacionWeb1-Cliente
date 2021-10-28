@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  margin: 20px;
+}
+.container .mano_cerrada {
+  text-align: left;
+  justify-content: space-between;
+}
+.header {
+  background-color: blue;
+  padding: 1em;
+  margin-right: auto;
+  width: 20%;
+  text-align: center;
+}
+.container .botones {
+  border-radius: 1em;
+  margin: auto;
+}
